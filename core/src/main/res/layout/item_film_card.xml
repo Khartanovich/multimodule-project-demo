@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/backgraund_item_film_card"
+    >
+
+    <ImageView
+        android:id="@+id/imgPosterUrlPreview"
+        android:layout_width="111dp"
+        android:layout_height="156dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/backgraund_item_film_card"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tool:src="@tools:sample/avatars"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tvNameRu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="tvNameRu"
+        app:layout_constraintEnd_toEndOf="@id/imgPosterUrlPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPosterUrlPreview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
